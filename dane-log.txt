@@ -1,0 +1,5 @@
+admin:
+kinder-admin
+
+hasło: kindergarden
+mail: rum....

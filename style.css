@@ -1,0 +1,652 @@
+/*
+Theme Name: Kindergarden
+Author: Kamila Dynysiuk
+Version: 1.0
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333333;
+    font-family: 'Lato', Georgia, Verdana, sans-serif;
+}
+
+.collapse {
+    background-color: rgb(248, 249, 250);
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.nav-link {
+    color: #333333;
+    font-weight: normal;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #e52121;
+}
+
+.nav-link:active {
+    border-bottom: 10px solid #007bff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #e52121;
+    font-weight: bold;
+}
+
+h1 {
+    color: #e52121;
+}
+
+.navbar {
+    background-color: #e6e6fa;
+    color: #333333;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.navbar {
+    height: 15vh;
+}
+
+.jumbotron {
+    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron h1 {
+    color: #e52121;
+    font-weight: bold;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2),
+        12px -2px 10px rgba(255, 255, 255, 0.41);
+    font-size: 5rem;
+}
+
+.jumbotron p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2),
+        -2px -2px 3px rgba(255, 255, 255, 0.58);
+}
+
+.main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-oferts {
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card-text {
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.card-text:hover {
+    color: #e52121;
+}
+
+.nav-item {
+    margin-right: 1.33em;
+    border-right: 1px solid #e6e6fa;
+    padding-right: 0.5em;
+    line-height: 1em;
+}
+
+.nav-item:last-child {
+    border: none;
+}
+
+.container-offerts {
+    margin-top: 1.33rem;
+}
+
+.card {
+    border: 2px solid red;
+}
+
+.container-updates {
+    margin-block-start: 3rem;
+    margin-block-end: 3em;
+}
+
+.slide-description a h5 {
+    color: #007bff;
+}
+
+.slide-description a p {
+    color: #333333;
+}
+
+.container-we {
+    margin-block-end: 100px;
+}
+
+.list-item h4 {
+    color: #ee7919;
+}
+
+.copyright {
+    height: 10vh;
+    background-color: #D1EDE9;
+}
+
+#myScrollspy ul li {
+    list-style: none;
+    line-height: 2.33rem;
+    font-size: 1.33rem;
+}
+
+.list-item {
+    padding-inline-start: 1.33rem;
+    padding-inline-end: 1.33rem;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contact-details a {
+    color: #333;
+}
+
+.fab {
+    color: #e52121;
+}
+
+.contact-details a:hover {
+    color: #e52121;
+    text-decoration: none;
+}
+
+.carousel-inner {
+    background-color: #D1EDE9;
+}
+
+/* aktualności */
+.bookmark {
+    padding-block-end: 2rem;
+    padding-block-start: 2rem;
+    margin: 0 auto;
+    background-color: #D1EDE9;
+}
+
+.event {
+    border: 1px solid #e6e6fa;
+    margin-block-start: 1.33rem;
+    margin-block-end: 1.33rem;
+    padding-block-end: 1.33rem;
+    padding-block-start: 1.33rem;
+}
+
+.event h2 {
+    font-size: 2.5rem;
+    color: #ee7919;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.event h3 {
+    color: #e52121;
+}
+
+/* o przedszkolu*/
+.about-us {
+
+    margin-block-start: 1.33rem;
+    margin-block-end: 1.33rem;
+}
+
+.about-conatiner {
+    border-bottom: 1px solid #e6e6fa;
+    padding-block-end: 1.33rem;
+}
+
+.up-date-kid {
+    border-left: 1px solid #e6e6fa;
+}
+
+.up-date-link a {
+    color: #333333;
+}
+
+.up-date-link a:hover {
+    color: #e52121;
+    text-decoration: none;
+}
+
+/* oferty*/
+.oferts-list {
+    border-bottom: 1px solid #e6e6fa;
+    padding: 0.5rem 0;
+}
+
+.oferts-list:last-child {
+    border: none;
+}
+
+.oferts-list i {
+    color: royalblue;
+}
+
+/* kadra*/
+.team {
+    border-bottom: 1px solid #e6e6fa;
+}
+
+.team-text {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 100;
+}
+
+/* urodziny */
+
+.birthday {
+    background-image: url("o-przedszkolu/images/party.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+/* grupy*/
+
+.group-link {
+    text-transform: uppercase;
+    color: #ee7919;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.group-title {
+    color: #e52121;
+}
+
+@media(min-width: 300px) {
+    .navbar {
+        height: 15vh;
+    }
+
+    .jumbotron {
+        height: 70vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.3rem;
+    }
+
+    .jumbotron p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .blockquote-footer {
+        font-size: 0.6rem;
+    }
+
+    .container-oferts {
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .under-title {
+        font-size: 1.3rem;
+    }
+
+    .adress h5,
+    .contact-details {
+        font-size: 1.2rem;
+    }
+
+    /*aktualności*/
+    .bookmark {
+        padding-block-end: 0.5rem;
+        padding-block-start: 0.5rem;
+    }
+
+    .bookmark h1 {
+        font-size: 2rem;
+    }
+
+    .event {
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+        padding-block-end: 0.5rem;
+        padding-block-start: 0.5rem;
+    }
+
+    .event h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .event h3 {
+        padding-top: 1rem;
+        text-align: center
+    }
+
+    /* rekrutacja */
+
+    .recruitment a {
+        font-size: 1.5rem;
+    }
+
+    /*kadra*/
+    .team-text {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 400px) {
+    .navbar {
+        height: 10vh;
+    }
+
+    .jumbotron {
+        height: 60vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.8rem;
+    }
+
+    .jumbotron p {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .blockquote-footer {
+        font-size: 0.8rem;
+    }
+
+    /* aktualności*/
+    .event h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 450px) {
+
+    .jumbotron {
+        height: 65vh;
+    }
+}
+
+@media(min-width: 530px) {
+
+    .jumbotron {
+        height: 70vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 3.2rem;
+    }
+
+    .jumbotron p {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .blockquote-footer {
+        font-size: 0.8rem;
+    }
+
+    .team-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .jumbotron h1 {
+        font-size: 3.8rem;
+    }
+
+    .jumbotron p {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .blockquote-footer {
+        font-size: 0.6rem;
+    }
+
+    .container-oferts {
+        margin-block-start: 3rem;
+        margin-block-end: 3rem;
+    }
+
+    .adress h5,
+    .contact-details {
+        font-size: 1.2rem;
+    }
+
+    /*aktualności*/
+    .bookmark {
+        padding-block-end: 1rem;
+        padding-block-start: 1rem;
+    }
+
+    .bookmark h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+@media(min-width: 768px) {
+    .navbar {
+        height: 15vh;
+    }
+
+    .jumbotron {
+        height: 70vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 4.3rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.5rem;
+    }
+
+    .blockquote-footer {
+        font-size: 0.6rem;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .under-title {
+        font-size: 2rem;
+    }
+
+    .adress h4,
+    .contact-list h4 {
+        font-size: 2rem;
+    }
+
+    .adress h5,
+    .contact-details {
+        font-size: 1.2rem;
+    }
+
+    /* aktualności */
+    .bookmark {
+        padding-block-end: 1.2rem;
+        padding-block-start: 1.2rem;
+    }
+
+    .bookmark h1 {
+        font-size: 3rem;
+    }
+
+    .event {
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+        padding-block-end: 1rem;
+        padding-block-start: 1rem;
+    }
+
+    .event h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .team-text {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media(min-width: 810px) {
+    .navbar li {
+        font-size: 1.1rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 3.3rem;
+    }
+
+    .jumbotron p {
+        padding-top: 1.5rem;
+    }
+
+}
+
+@media(min-width: 910px) {
+    .navbar li {
+        font-size: 1.3rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 4rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 992px) {
+
+    .jumbotron h1 {
+        font-size: 4.7rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.5rem;
+    }
+
+    .blockquote-footer {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+
+    .under-title {
+        font-size: 1.3rem;
+    }
+
+    .adress h4,
+    .contact-list h4 {
+        font-size: 1.8rem;
+    }
+
+    .adress h5,
+    .contact-details {
+        font-size: 1.5rem;
+    }
+
+    .about-us {
+        padding-block-start: 1.33rem;
+        padding-block-end: 1.33rem;
+    }
+}
+
+
+@media(min-width: 1200px) {
+
+
+    .jumbotron {
+        height: 85vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.5rem;
+    }
+
+    .adress h4,
+    .contact-list h4 {
+        font-size: 2.3rem;
+    }
+
+    .adress h5,
+    .contact-details {
+        font-size: 1.5rem;
+    }
+
+    /*aktualności*/
+    .bookmark {
+        padding-block-end: 1.33rem;
+        padding-block-start: 1.33rem;
+    }
+
+    .bookmark h1 {
+        font-size: 3rem;
+    }
+
+    .event {
+        margin-block-start: 1.33rem;
+        margin-block-end: 1.33rem;
+        padding-block-end: 1.33rem;
+        padding-block-start: 1.33rem;
+    }
+
+    .event h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+}
