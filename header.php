@@ -24,10 +24,10 @@
                         <a class="nav-link" href="<?php echo site_url() ?> ">Strona główna <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Aktualności/aktualnosci.html">Aktualności</a>
+                        <a <?php if (get_post_type() == 'event') echo 'style="color: #e52121"'; ?> class="nav-link" href="<?php echo site_url('/events') ?>">Aktualności</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo site_url('/blog') ?>">Blog</a>
+                        <a <?php if (get_post_type() == 'post') echo 'style="color: #e52121"'; ?>class="nav-link" href="<?php echo site_url('/blog') ?>">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
