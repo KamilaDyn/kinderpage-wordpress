@@ -16,10 +16,10 @@
             <?php while (have_posts()) {
                 the_post(); ?>
                 <article class="col-10">
-                    <h2 class="title text-center text-primary pb-3"><?php the_title() ?></h2>
-                    <div class="metabox bg-light mb-4">
+                    <h2 class="title text-center text-primary pb-3"><?php the_title(); ?></h2>
+                    <div class="metabox bg-light">
                         <h5>Kategoria: <strong><?php the_category(', '); ?></strong> </h5>
-                        <p class="text-secondary">Opublikowany przez: <span class="text-dark"><?php the_author_posts_link(); ?> </span>on <?php the_time('n.j.y') ?></p>
+                        <p class="text-secondary">Opublikowany przez: <?php the_author_posts_link(); ?> on <?php the_time('n.j.y') ?></p>
                     </div>
                     <p><?php the_content(); ?></p>
                 </article>
@@ -35,6 +35,7 @@
 
 
 </main>
+<hr class="d-none d-lg-block">
 
 
 

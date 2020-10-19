@@ -56,7 +56,8 @@ get_header();
 
         ?>
         <div class="about-conatiner col-10 col-md-7 col-lg-8 text-justify ">
-            <div class="content"><?php the_content(); ?></div>
+            <div class="content"><?php echo wp_get_post_parent_id(get_the_ID());
+                                    the_content(); ?> </div>
         </div>
 
     <?php }

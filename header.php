@@ -35,7 +35,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="o-przedszkolu/o-przedszkolu.html">O przedszkolu</a>
-                            <a class="dropdown-item" href="<?php echo site_url('/oferta') ?>">Oferta</a>
+                            <a class="dropdown-item" <?php if (get_post_type() == 'oferta') echo 'style="color: #e52121"' ?> href="<?php echo site_url('/o-przedszkolu/oferta') ?>">Oferta</a>
                             <a class="dropdown-item" href="o-przedszkolu/kadra.html">Kadra</a>
                             <a class="dropdown-item" href="o-przedszkolu/grupy.html">Grupy</a>
                             <a class="dropdown-item" href="o-przedszkolu/urodziny.html">Urodziny </a>
