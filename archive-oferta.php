@@ -1,17 +1,14 @@
-<!-- <?php
-get_header();
-
+<?php get_header();
 ?>
-<div class="bookmark container-fluid">
-    <h1 class="text-center">Wszystkie oferty</h1>
-</div>
-<section class="main">
-    <?php
-
-    while (have_posts()) {
-        the_post() ?>
-
-        <div class="about-conatiner col-10 col-md-7 col-lg-8 text-justify ">
+<main class="wrapper">
+    <section class="mb-5">
+        <header class="bookmark container-fluid">
+            <h1 class="text-center">Oferta dla Paśtwa dzieci</h1>
+        </header>
+    </section>
+    <section class="mb-5">
+        <!--oferta-->
+        <div class="offer-container col-12 col-md-10 col-lg-8 text-justify m-auto ">
             <p>
                 Pragniemy z wykorzystaniem pedagogiki Marii Montessori dać szansę dziecku na rozwój swojej osoby według
                 stworzonych przez siebie indywidualnych planów rozwojowych. W planach tych zapisane są jego możliwości,
@@ -20,16 +17,19 @@ get_header();
                     wszystkich
                     dzieci niezależnie od grupy wiekowej:</strong></p>
             <ul>
-                <li class="oferts-list"><i class="fas fa-arrow-circle-right"></i> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                <?php while (have_posts()) {
+                    the_post(); ?>
+
+                    <li class="offers-list"><a href="<?php the_permalink(); ?>"><i class="fas fa-arrow-circle-right"></i> <?php the_title(); ?></li></a>
+
+                <?php  } ?>
             </ul>
         </div>
-    <?php
-    }
 
-    echo paginate_links();
-    ?>
-</section>
 
+    </section>
+</main>
+<hr class="d-none d-lg-block">
 
 <?php
-get_footer(); -->
+get_footer();
