@@ -10,12 +10,12 @@
             </div>
         </div>
     </section>
-    <section id="blog">
+    <section id="blog" class="my-4 px-3">
         <div class="container-fluid">
 
             <?php while (have_posts()) {
                 the_post(); ?>
-                <article class="col-10">
+                <article class="blog-article col-12 col-md-10 my-md-6">
                     <h2 class="title text-center text-primary pb-3"><?php the_title(); ?></h2>
                     <div class="metabox bg-light">
                         <h5>Kategoria: <strong><?php the_category(', '); ?></strong> </h5>
@@ -28,14 +28,11 @@
             echo paginate_links();
             ?>
 
-
-
         </div>
     </section>
 
 
 </main>
-<hr class="d-none d-lg-block">
 
 
 

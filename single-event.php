@@ -29,6 +29,10 @@ get_header();
                 ?>
             </div>
         </div>
+        <div class="col text-center mt-3"><a href="<?php echo site_url('/events'); ?>">
+                <button type="button" class="btn btn-primary btn-lg btn-hover btn-default">Aktualności</button>
+            </a>
+        </div>
     </section>
 </main>
 <hr class="d-none d-lg-block">

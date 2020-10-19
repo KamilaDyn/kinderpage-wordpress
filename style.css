@@ -8,6 +8,14 @@ Version: 1.0
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*reset */
+body {
+    color: #333333;
+    font-family: 'Lato', Georgia, Verdana, sans-serif;
 }
 
 a {
@@ -20,9 +28,19 @@ a:hover {
     color: #333;
 }
 
-body {
-    color: #333333;
-    font-family: 'Lato', Georgia, Verdana, sans-serif;
+@media (min-width: 768px) {
+    .my-md-6 {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .mb-md-7 {
+        margin-bottom: 5rem;
+    }
+
 }
 
 .post-section {
@@ -145,13 +163,11 @@ h1 {
 
 .wrapper {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
 }
 
-.container-oferts {
-    margin-block-start: 3rem;
-    margin-block-end: 3rem;
-}
+
+
 
 .card a:hover {
     text-decoration: none;
@@ -177,18 +193,12 @@ h1 {
     border: none;
 }
 
-.container-offer {
-    margin-top: 1.33rem;
-}
+
 
 .card {
     border: 2px solid red;
 }
 
-.container-updates {
-    margin-block-start: 3rem;
-    margin-block-end: 3em;
-}
 
 .slide-description a h5 {
     color: #007bff;
@@ -198,11 +208,9 @@ h1 {
     color: #333333;
 }
 
-.container-we {
-    margin-block-end: 100px;
-}
 
-.list-item h4 {
+
+h4 {
     color: #ee7919;
 }
 
@@ -258,10 +266,6 @@ ul {
 
 .event {
     border: 1px solid #e6e6fa;
-    margin-block-start: 1.33rem;
-    margin-block-end: 1.33rem;
-    padding-block-end: 1.33rem;
-    padding-block-start: 1.33rem;
 }
 
 .event h2 {
@@ -340,6 +344,32 @@ ul {
 }
 
 /* grupy*/
+.teacher-card {
+    display: inline-block;
+    width: 200px;
+    margin-right: 15px;
+    background-color: beige;
+    overflow: hidden;
+}
+
+.teacher-image {
+    transition: opacity .3s ease-out, transform .3s ease-out;
+}
+
+.teacher-card:hover .teacher-image {
+    opacity: .80;
+    transform: scale(1.1) rotate(4deg);
+}
+
+.teacher-name {
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    left: 0;
+    right: 0;
+    background-color: color($darkOrange a(85%) b(+15%) s(+20%));
+}
 
 .group-link {
     text-transform: uppercase;
@@ -374,10 +404,7 @@ ul {
         font-size: 0.6rem;
     }
 
-    .container-oferts {
-        margin-block-start: 1rem;
-        margin-block-end: 1rem;
-    }
+
 
     .card-text {
         font-size: 1.5rem;
@@ -406,12 +433,6 @@ ul {
         font-size: 2rem;
     }
 
-    .event {
-        margin-block-start: 0.5rem;
-        margin-block-end: 0.5rem;
-        padding-block-end: 0.5rem;
-        padding-block-start: 0.5rem;
-    }
 
     .event h2 {
         font-size: 1.5rem;
@@ -511,10 +532,6 @@ ul {
         font-size: 0.6rem;
     }
 
-    .container-oferts {
-        margin-block-start: 3rem;
-        margin-block-end: 3rem;
-    }
 
     .adress h5,
     .contact-details {
@@ -588,12 +605,6 @@ ul {
         font-size: 3rem;
     }
 
-    .event {
-        margin-block-start: 1rem;
-        margin-block-end: 1rem;
-        padding-block-end: 1rem;
-        padding-block-start: 1rem;
-    }
 
     .event h2 {
         font-size: 2rem;
@@ -709,12 +720,6 @@ ul {
         font-size: 3rem;
     }
 
-    .event {
-        margin-block-start: 1.33rem;
-        margin-block-end: 1.33rem;
-        padding-block-end: 1.33rem;
-        padding-block-start: 1.33rem;
-    }
 
     .event h2 {
         font-size: 2.5rem;

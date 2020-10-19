@@ -30,13 +30,13 @@
                         <a <?php if (get_post_type() == 'post') echo 'style="color: #e52121"'; ?>class="nav-link" href="<?php echo site_url('/blog') ?>">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" <?php if (get_post_type() == 'o-przedszkolu') echo 'style="color: #e52121"' ?> href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             O przedszkolu
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="o-przedszkolu/o-przedszkolu.html">O przedszkolu</a>
+                            <a class="dropdown-item" <?php if (get_post_type() == 'o-przedszkolu') echo 'style="color: #e52121"' ?> href="<?php echo site_url('/o-przedszkolu') ?>">O przedszkolu</a>
                             <a class="dropdown-item" <?php if (get_post_type() == 'oferta') echo 'style="color: #e52121"' ?> href="<?php echo site_url('/o-przedszkolu/oferta') ?>">Oferta</a>
-                            <a class="dropdown-item" href="o-przedszkolu/kadra.html">Kadra</a>
+                            <a class="dropdown-item" <?php if (get_post_type() == 'kadra') echo 'style="color: #e52121"' ?> href="<?php echo site_url('o-przedszkolu/kadra'); ?>">Kadra</a>
                             <a class="dropdown-item" href="o-przedszkolu/grupy.html">Grupy</a>
                             <a class="dropdown-item" href="o-przedszkolu/urodziny.html">Urodziny </a>
                         </div>

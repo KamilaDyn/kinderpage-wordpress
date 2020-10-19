@@ -9,13 +9,12 @@ get_header();
             <h1 class="text-center">Aktualności</h1>
         </header>
     </section>
-    <hr class="d-none d-lg-block">
-    <section class="all-events">
-        <div class="container">
+    <section class="all-events my-3 px-3">
+        <div class="container-fluid">
             <?php while (have_posts()) {
                 the_post(); ?>
                 <a href="<?php the_permalink() ?> ">
-                    <article id="<?php echo get_the_ID(); ?>" class="event col-12">
+                    <article id="<?php echo get_the_ID(); ?>" class="event col-12 col-md-10 my-md-6 p-4">
                         <h2><?php the_title(); ?></h2>
                         <h3> <?php
                                 $eventDate = new DateTime(get_field('event_date'));
@@ -31,7 +30,7 @@ get_header();
             ?>
         </div>
 
-        <p class="text-center">Może zainteresują Państwa nasze poprzednie wydarzenia, możemy je dla Państwa zorganizować. Zapraszamy do zapoznania się z <a href="<?php echo site_url('/past-events'); ?>" class="text-primary"> poprzednimi wydarzeniami</a></p>
+        <p class="text-center pb-5">Może zainteresują Państwa nasze poprzednie wydarzenia, możemy je dla Państwa zorganizować. Zapraszamy do zapoznania się z <a href="<?php echo site_url('/past-events'); ?>" class="text-primary"> poprzednimi wydarzeniami</a></p>
         <hr class="d-none d-lg-block">
     </section>
 

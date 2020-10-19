@@ -28,7 +28,7 @@ get_header();
             </div>
 
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3  mx-1 mt-1 mt-lg-3" style="max-width: 300px;">
-                <a href="<?php echo site_url('/oferta') ?>">
+                <a href="<?php echo site_url('/o-przedszkolu/oferta') ?>">
                     <img src="<?php echo get_theme_file_uri('./images/offer.png'); ?>" class=" card-img card-img-top mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center ">Oferta</p>
