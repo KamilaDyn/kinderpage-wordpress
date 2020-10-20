@@ -20,6 +20,8 @@ function kindergarden_features()
     add_theme_support('post-thumbnails');
     add_image_size('teacherLand', 400, 260, true);
     add_image_size('teacherPortrait', 480, 650, true);
+    add_image_size('eventsPictureSmall', 250, 150, true);
+    add_image_size('eventsPictureMedium', 350, 250, true);
 }
 
 add_action('after_setup_theme', 'kindergarden_features');
