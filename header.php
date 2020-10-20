@@ -38,14 +38,14 @@
                             <a class="dropdown-item" <?php if (get_post_type() == 'oferta') echo 'style="color: #e52121"' ?> href="<?php echo site_url('/o-przedszkolu/oferta') ?>">Oferta</a>
                             <a class="dropdown-item" <?php if (get_post_type() == 'kadra') echo 'style="color: #e52121"' ?> href="<?php echo site_url('o-przedszkolu/kadra'); ?>">Kadra</a>
                             <a class="dropdown-item" href="<?php echo site_url('o-przedszkolu/grupy'); ?>">Grupy</a>
-                            <a class="dropdown-item" href="o-przedszkolu/urodziny.html">Urodziny </a>
+                            <a class="dropdown-item" href="#">Urodziny </a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Kontakt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color:#ee7919" href="rekrutacja/rekrutacja.html">Rekrutacja</a>
+                        <a class="nav-link" style="color:#ee7919" href="#">Rekrutacja</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-0 h4 text-right">
