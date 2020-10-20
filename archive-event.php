@@ -16,11 +16,12 @@ get_header();
                 <a href="<?php the_permalink() ?> ">
                     <article id="<?php echo get_the_ID(); ?>" class="event col-12 col-md-10 my-md-6 p-4">
                         <h2><?php the_title(); ?></h2>
+                        <img class="d-none d-sm-block mr-3 float-left" style="max-width: 200px; max-height: 200px;" src="<?php the_post_thumbnail_url('eventsPictureMedium'); ?>" alt="obraz: <?php the_title() ?>">
                         <h3> <?php
                                 $eventDate = new DateTime(get_field('event_date'));
                                 echo  $eventDate->format('d.m.Y') . 'r';
                                 ?> </h3>
-                        <img class="d-none d-sm-block mr-3 float-left" style="max-width: 200px; max-height: 200px;" src="img/insurance.png" alt="cross">
+
                         <p> <?php echo wp_trim_words(get_the_content(), 100); ?></p>
                         <p><a class="text-primary" href="<?php the_permalink() ?>">Czytaj więcej</a></p>
                     </article>
