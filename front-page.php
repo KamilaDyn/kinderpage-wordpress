@@ -28,7 +28,7 @@ get_header();
             </div>
 
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3  mx-1 mt-1 mt-lg-3" style="max-width: 300px;">
-                <a href="<?php echo site_url('/o-przedszkolu/oferta') ?>">
+                <a href="<?php echo site_url('/o-przedszkolu/0-przedszkolu/oferta') ?>">
                     <img src="<?php echo get_theme_file_uri('./images/offer.png'); ?>" class=" card-img card-img-top mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center ">Oferta</p>
@@ -59,9 +59,9 @@ get_header();
     <!--Why we-->
     <div id="why-we" class="container-fluid">
         <h2 class="title text-center ">Dlaczego My?</h2>
-        <h4 class="under-title text-center pb-2 pb-md-3">Pedegogika Marii Montessori - kierujemy się między innymi
+        <h3 class="under-title text-center pb-2 pb-md-3">Pedegogika Marii Montessori - kierujemy się między innymi
             poniższymi
-            zasadami:</h4>
+            zasadami:</h3>
         <div class="row ">
 
             <div class="description col-12  col-md-6 my-1 my-md-2">
@@ -151,7 +151,7 @@ get_header();
                 <?php $active_class = (0 === $homepageEvents->current_post) ? ' active' : '';  ?>
 
                 <div class="carousel-item<?php echo esc_attr($active_class); ?>">
-                    <img class="img-slide col-12 col-md-5 d-block d-sm-none d-md-inline-block mt-md-4 mt-lg-3 mt-xl-0 mb-3 mb-lg-0 align-top" src="img/montessori.jpg" alt="First slide">
+                    <img class="img-slide col-12 col-md-5 d-block d-sm-none d-md-inline-block mt-md-4 mt-lg-3 mt-xl-0 mb-3 mb-lg-0 align-top" src="<?php the_post_thumbnail_url('eventsPictureLand'); ?>" alt="First slide">
                     <a href="<?php the_permalink() ?>" class="event">
                         <div class="d-block col-12 col-md-6 d-md-inline-block mb-5 mt-sm-3 mb-md-5 text-center">
                             <h4 class="mt-md-3 mt-lg-5"><?php the_title() ?></h4>
