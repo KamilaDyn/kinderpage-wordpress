@@ -193,13 +193,6 @@ h1 {
     border: none;
 }
 
-
-
-.card {
-    border: 2px solid red;
-}
-
-
 .slide-description a h5 {
     color: #007bff;
 }
@@ -335,7 +328,6 @@ ul {
 /* urodziny */
 
 .birthday {
-    background-image: url("o-przedszkolu/images/party.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -442,7 +434,8 @@ ul {
 
     .event h3 {
         padding-top: 1rem;
-        text-align: center
+        text-align: center;
+        color: #e52121;
     }
 
     /* rekrutacja */

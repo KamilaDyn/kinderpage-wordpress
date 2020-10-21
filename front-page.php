@@ -28,7 +28,7 @@ get_header();
             </div>
 
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3  mx-1 mt-1 mt-lg-3" style="max-width: 300px;">
-                <a href="<?php echo site_url('/o-przedszkolu/0-przedszkolu/oferta') ?>">
+                <a href="<?php echo site_url('/o-przedszkolu/oferta') ?>">
                     <img src="<?php echo get_theme_file_uri('./images/offer.png'); ?>" class=" card-img card-img-top mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center ">Oferta</p>
@@ -36,7 +36,7 @@ get_header();
                 </a>
             </div>
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3  ,mx-1 mt-1  mt-md-2 mt-lg-3 " style="max-width: 300px;">
-                <a href="<?php echo site_url('/grupy') ?>">
+                <a href="<?php echo site_url('/o-przedszkolu/grupy') ?>">
                     <img src="<?php echo get_theme_file_uri('./images/kids-3171905_640.png'); ?>" class="card-img card-img-top mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center">Grupy</p>
@@ -45,7 +45,7 @@ get_header();
             </div>
 
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3   mx-1 mt-1  mt-md-2 mt-lg-3" style="max-width: 300px;">
-                <a href="<?php echo site_url('/kadra') ?>">
+                <a href="<?php echo site_url('/o-przedszkolu/kadra') ?>">
                     <img src="<?php echo get_theme_file_uri('./images/team-2306543_640.jpg'); ?>" class="card-img mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center ">Kadra</p>
@@ -127,7 +127,7 @@ get_header();
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <h3 class="text-center pt-3">Nadchodzące wydarzenia</h3>
+            <h2 class="text-center py-3">Nadchodzące wydarzenia</h2>
             <?php
             $today = date('Ymd');
             $homepageEvents = new WP_Query(array(
@@ -151,9 +151,9 @@ get_header();
                 <?php $active_class = (0 === $homepageEvents->current_post) ? ' active' : '';  ?>
 
                 <div class="carousel-item<?php echo esc_attr($active_class); ?>">
-                    <img class="img-slide col-12 col-md-5 d-block d-sm-none d-md-inline-block mt-md-4 mt-lg-3 mt-xl-0 mb-3 mb-lg-0 align-top" src="<?php the_post_thumbnail_url('eventsPictureLand'); ?>" alt="First slide">
+                    <img class="img-slide col-12 col-md-5 d-block d-sm-none d-md-inline-block mt-md-4 mt-lg-3 mt-xl-0 mb-3 mb-lg-0 align-top" src="<?php the_post_thumbnail_url('eventsPictureMedium'); ?>" alt="First slide">
                     <a href="<?php the_permalink() ?>" class="event">
-                        <div class="d-block col-12 col-md-6 d-md-inline-block mb-5 mt-sm-3 mb-md-5 text-center">
+                        <div class=" event d-block col-12 col-md-6 d-md-inline-block mb-5 mt-sm-3 mb-md-5 text-center">
                             <h4 class="mt-md-3 mt-lg-5"><?php the_title() ?></h4>
                             <h3><?php
                                 $eventDate = new DateTime(get_field('event_date'));
@@ -232,7 +232,7 @@ get_header();
 </main>
 
 
-<?
+<?php
 
 get_footer();
 ?>

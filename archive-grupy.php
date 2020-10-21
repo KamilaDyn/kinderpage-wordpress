@@ -19,9 +19,9 @@ get_header();
                     <?php while (have_posts()) {
                         the_post(); ?>
 
-                        <div class="card col-12 col-sm-5  col-lg-4  mx-1 mt-1 mt-lg-3" style="max-width: 300px;">
+                        <div class="col-12 col-sm-5 col-lg-4 mx-1 mt-1 mt-lg-3" style="max-width: 300px;">
                             <a href="<?php the_permalink(); ?>">
-                                <img src="../o-przedszkolu/images/tiger.jpg" class="card-img card-img-top mt-2 img-thumbnail" alt="tygrysek">
+                                <img src="<?php the_post_thumbnail_url('groupPicturePortrait'); ?>" class="card-img card-img-top mt-2 img-thumbnail" alt="tygrysek">
                                 <div class="card-body ">
                                     <p class="text-center group-link"><?php the_title(); ?></p>
                                 </div>
