@@ -7,7 +7,7 @@
                 <h5 class="pb-3">ul. Wyszyńskiego 6, 63-33 <br> Warszawa</h5>
             </div>
             <div class="col-12 justify-content-center">
-                <img class="col-12 h-100" src="../img/mapa.jpg" alt="map">
+                <img class="col-12 h-100" src="#" alt="map">
             </div>
         </div>
 
@@ -32,7 +32,16 @@
     <div class="copyright">
         <p class="text-right mr-5 pt-3"> &copy; Kamila</p>
     </div>
-
+    <div class="search-overlay">
+        <div class="search-overlay__top">
+            <div class="container">
+                <i class="fa fa-search search-overlay__icon" aria-hidden="true"></i>
+                <input type="text" class="search-term" placeholder="Szukaj...." id="search-term">
+                <i class="fa fa-window-close search-overlay__close" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id="search-overlay__results"></div>
+    </div>
 
 </footer>
 
