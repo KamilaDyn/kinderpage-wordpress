@@ -4,5 +4,23 @@
 #bootstrap folder
 /bootstrap
 
+/bundle
+
+/css_module
+
+/js/module
+
+webpack.config.js
+package-lock.json
+package.json
+
+
 #plik log
 dane-log.txt
+
+#node-modules
+node_modules
+
+
+#map css 
+style.css.map
