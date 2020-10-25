@@ -1,7 +1,6 @@
 @charset "UTF-8";
-
 /*
-Theme Name: Kindergarden
+Theme Name: Kindergarden 
 Author: Kamila Dynysiuk
 Version: 1.0
 
@@ -14,6 +13,7 @@ Version: 1.0
 
 /*reset */
 body {
+  font-family: 'Lato', sans-serif;
   color: #333333;
   font-family: 'Lato', Georgia, Verdana, sans-serif;
   position: relative;
@@ -51,7 +51,6 @@ a:hover {
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.96);
-  visibility: hidden;
   transform: scale(1.09);
   transition: opacity .3s, transform .3s, visibility .3s;
   box-sizing: border-box;
@@ -250,6 +249,7 @@ h1 {
   margin-bottom: 30px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   margin: 50px auto;
+  width: 80%;
 }
 
 .metabox p {
@@ -403,10 +403,6 @@ ul {
   padding-block-end: 1.33rem;
 }
 
-.up-date-kid {
-  border-left: 1px solid #e6e6fa;
-}
-
 .up-date-link a {
   color: #333333;
 }
@@ -496,68 +492,54 @@ ul {
   .navbar {
     height: 15vh;
   }
-
   .jumbotron {
     height: 70vh;
   }
-
   .jumbotron h1 {
     font-size: 2.3rem;
   }
-
   .jumbotron p {
     margin-top: 2rem;
     font-size: 1rem;
   }
-
   .blockquote-footer {
     font-size: 0.6rem;
   }
-
   .card-text {
     font-size: 1.5rem;
   }
-
   .title {
     font-size: 1.8rem;
   }
-
   .under-title {
     font-size: 1.3rem;
   }
-
   .adress h5,
   .contact-details {
     font-size: 1.2rem;
   }
-
   /*aktualności*/
   .bookmark {
     padding-block-end: 0.5rem;
     padding-block-start: 0.5rem;
   }
-
   .bookmark h1 {
     font-size: 2rem;
   }
-
   .event h2 {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 0.5rem;
   }
-
   .event h3 {
     padding-top: 1rem;
     text-align: center;
     color: #e52121;
   }
-
   /* rekrutacja */
   .recruitment a {
     font-size: 1.5rem;
   }
-
   /*kadra*/
   .team-text {
     font-size: 1.2rem;
@@ -568,24 +550,19 @@ ul {
   .navbar {
     height: 10vh;
   }
-
   .jumbotron {
     height: 60vh;
   }
-
   .jumbotron h1 {
     font-size: 2.8rem;
   }
-
   .jumbotron p {
     margin-top: 2rem;
     font-size: 1.1rem;
   }
-
   .blockquote-footer {
     font-size: 0.8rem;
   }
-
   /* aktualności*/
   .event h2 {
     font-size: 1.8rem;
@@ -602,20 +579,16 @@ ul {
   .jumbotron {
     height: 70vh;
   }
-
   .jumbotron h1 {
     font-size: 3.2rem;
   }
-
   .jumbotron p {
     margin-top: 1rem;
     font-size: 1.3rem;
   }
-
   .blockquote-footer {
     font-size: 0.8rem;
   }
-
   .team-text {
     font-size: 1.5rem;
   }
@@ -625,27 +598,22 @@ ul {
   .jumbotron h1 {
     font-size: 3.8rem;
   }
-
   .jumbotron p {
     margin-top: 1rem;
     font-size: 1.3rem;
   }
-
   .blockquote-footer {
     font-size: 0.6rem;
   }
-
   .adress h5,
   .contact-details {
     font-size: 1.2rem;
   }
-
   /*aktualności*/
   .bookmark {
     padding-block-end: 1rem;
     padding-block-start: 1rem;
   }
-
   .bookmark h1 {
     font-size: 2.5rem;
   }
@@ -655,61 +623,48 @@ ul {
   .navbar {
     height: 15vh;
   }
-
   .jumbotron {
     height: 70vh;
   }
-
   .jumbotron h1 {
     font-size: 4.3rem;
   }
-
   .jumbotron p {
     font-size: 1.5rem;
   }
-
   .blockquote-footer {
     font-size: 0.6rem;
   }
-
   .card-text {
     font-size: 1.5rem;
     letter-spacing: 2px;
   }
-
   .title {
     font-size: 2.3rem;
   }
-
   .under-title {
     font-size: 2rem;
   }
-
   .adress h4,
   .contact-list h4 {
     font-size: 2rem;
   }
-
   .adress h5,
   .contact-details {
     font-size: 1.2rem;
   }
-
   /* aktualności */
   .bookmark {
     padding-block-end: 1.2rem;
     padding-block-start: 1.2rem;
   }
-
   .bookmark h1 {
     font-size: 3rem;
   }
-
   .event h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-
   .team-text {
     font-size: 1.8rem;
   }
@@ -719,11 +674,9 @@ ul {
   .navbar li {
     font-size: 1.1rem;
   }
-
   .jumbotron h1 {
     font-size: 3.3rem;
   }
-
   .jumbotron p {
     padding-top: 1.5rem;
   }
@@ -733,11 +686,9 @@ ul {
   .navbar li {
     font-size: 1.3rem;
   }
-
   .jumbotron h1 {
     font-size: 4rem;
   }
-
   .jumbotron p {
     font-size: 1.5rem;
   }
@@ -747,33 +698,26 @@ ul {
   .jumbotron h1 {
     font-size: 4.7rem;
   }
-
   .jumbotron p {
     font-size: 1.5rem;
   }
-
   .blockquote-footer {
     font-size: 1rem;
   }
-
   .card-text {
     font-size: 1.1rem;
   }
-
   .under-title {
     font-size: 1.3rem;
   }
-
   .adress h4,
   .contact-list h4 {
     font-size: 1.8rem;
   }
-
   .adress h5,
   .contact-details {
     font-size: 1.5rem;
   }
-
   .about-us {
     padding-block-start: 1.33rem;
     padding-block-end: 1.33rem;
@@ -784,39 +728,41 @@ ul {
   .jumbotron {
     height: 85vh;
   }
-
   .jumbotron h1 {
     font-size: 5rem;
   }
-
   .jumbotron p {
     font-size: 1.5rem;
   }
-
   .adress h4,
   .contact-list h4 {
     font-size: 2.3rem;
   }
-
   .adress h5,
   .contact-details {
     font-size: 1.5rem;
   }
-
   /*aktualności*/
   .bookmark {
     padding-block-end: 1.33rem;
     padding-block-start: 1.33rem;
   }
-
   .bookmark h1 {
     font-size: 3rem;
   }
-
   .event h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 }
 
+.sidebar {
+  margin: 50px auto;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    border-left: 1px solid #e6e6fa;
+  }
+}
 /*# sourceMappingURL=style.css.map */
