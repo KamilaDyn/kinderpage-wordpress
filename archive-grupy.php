@@ -30,7 +30,7 @@ get_header();
                     <?php   }  ?>
                 </div>
             </div>
-            <div class="up-date-kid col-12 col-md-4 col-lg-3">
+            <div class="sidebar col-12 col-md-4 col-lg-3">
                 <div class="col-12 my-3 my-lg-4 text-center">
                     <h4>Aktualne wydarzenia</h4>
                     <ul class="p-2">
@@ -65,7 +65,7 @@ get_header();
                         <?php } ?>
                     </ul>
                 </div>
-                <div class="col-12 text-center my-3 my-lg-4">
+                <div class=" col-12 text-center my-3 my-lg-4">
                     <h4 style="color:#ee7919">Praca</h4>
                     <p class="up-date-link"> <a href="../Aktualności/aktualnosci.html#work">Dołącz do naszego zespołu!!!</a></p>
                 </div>
