@@ -9,21 +9,32 @@ get_header();
             <h1 class="text-center">Oferta: <?php the_title(); ?></h1>
         </header>
     </section>
-    <section>
-        <div class="container mt-3 mb-5">
-
-            <?php
-
-            while (have_posts()) {
-                the_post();
-            ?>
-                <div class="offert-container col-10 col-md-7 col-lg-8 text-justify ">
-                    <div class="offert-content"><?php the_content(); ?></div>
+    <section class="post-section">
+        <div class="d-lg-flex">
+            <div class="col-12 col-lg-8 mx-3 m-auto mb-5">
+                <div class="metabox bg-light">
+                    <p>Wróć do: <a class="metabox__blog-home-link" href="<?php echo site_url('/o-przedszkolu/oferta') ?>">Cała oferta</a><span class="metabox__main"><?php the_title(); ?></span></p>
                 </div>
+                <div class="container mt-3 mb-5">
+                    <?php
 
-            <?php
-            }
-            ?>
+                    while (have_posts()) {
+                        the_post();
+                    ?>
+                        <div class="offert-container text-justify ">
+                            <div class="offert-content"><?php the_content(); ?></div>
+                        </div>
+
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+            <div class="sidebar col-12 col-md-4 col-lg-3 ">
+                <div class="col-12 my-3 my-lg-4 text-center">
+                    <p>tutaj będą aktualnosci oraz lista grup</p>
+                </div>
+            </div>
         </div>
     </section>
 </main>
