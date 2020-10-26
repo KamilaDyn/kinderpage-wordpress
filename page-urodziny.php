@@ -47,7 +47,10 @@
                     <h2 class="text-primary text-center">Serdecznie Zapraszamy!!!</h2>
                 </div>
                 <div class="up-date-kid col-12 col-md-4 col-lg-3">
-                    <div class="col-12 my-3 my-lg-4 text-center"> tutaj widget z aktualnosciami</div>
+                    <div class="col-12 my-3 my-lg-4 text-center">
+
+                        <?php dynamic_sidebar('default-sidebar'); ?>
+                    </div>
                 </div>
             </div>
 

@@ -49,47 +49,10 @@
 
             <div class="up-date-kid col-12 col-md-4 col-lg-3 my-3 ">
                 <div class="col-12 my-3 my-lg-4 text-center">
-                    <h5>Nadchodzące wydarzenia</h5>
-                    <ul class="py-2">
-                        <?php
-                        $today = date('Ymd');
-                        $homepageEvents = new WP_Query(array(
-                            'post_per_page' => -1,
-                            'post_type' => 'event',
-                            'meta_key' => 'event_date',
-                            'orderby' => 'meta_value_num',
-                            'order' => 'ASC',
-                            'meta_query' => array(
-                                array(
-                                    'key' => 'event_date',
-                                    'compare' => '>=',
-                                    'value' => $today,
-                                    'type' => 'numeric',
-                                )
-                            )
-                        ));
-                        while ($homepageEvents->have_posts()) {
-                            $homepageEvents->the_post(); ?>
-
-                            <li class="up-date-link"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?> <br></a>
-                                <span class="text-primary">
-                                    <?php
-                                    $eventDate = new DateTime(get_field('event_date'));
-                                    echo  $eventDate->format('d.m.Y') . 'r';
-                                    ?>
-
-                                </span> </li>
-                        <?php    } ?>
-
-                    </ul>
-                </div>
-                <div class="col-12 text-center my-3 my-lg-4">
-                    <h4 style="color:#ee7919">Praca</h4>
-                    <p class="up-date-link"> <a href="../Aktualności/aktualnosci.html#work">Dołącz do naszego zespołu!!!</a></p>
+                    <?php dynamic_sidebar('events-sidebar'); ?>
                 </div>
             </div>
-        </div>
-        <hr class="d-block d-lg-none">
+            <hr class="d-block d-lg-none">
 
     </section>
 </main>
