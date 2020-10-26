@@ -12,7 +12,7 @@
         <section class="about-us my-4 px-3">
             <!--Urodziny-->
             <div class="about-us row justify-content-around ">
-                <div class="birthday about-conatiner col-10 col-md-7 col-lg-8 text-justify " style="background-image: url(<?php echo get_theme_file_uri('./images/party.png'); ?>)">
+                <div class="birthday about-conatiner col-10 col-md-7 col-lg-8 text-justify " style="background-image: url(<?php echo get_theme_file_uri('./images/party.webp'); ?>)">
                     <h4>Urodziny</h4>
                     <h5>Drodzy Rodzice:</h5>
                     <p>Każde dziecko z wielką niecierpliwością wyczekuje swoich urodzin i marzy o tym, aby był to dzień wyjątkowy.
@@ -21,16 +21,16 @@
                     <h5>Nasza oferta:</h5>
                     <p>Oferujemy możliwość zorganizowania urodzin dla dziecka w naszym przedszkolu.</p>
                     <ul>
-                        <li><i class="fas fa-arrow-circle-right"></i> Urodziny organizujemy w godzinach popołudniowych od 15.30 do
+                        <li><i class="fa fa-arrow-circle-right text-info"></i> Urodziny organizujemy w godzinach popołudniowych od 15.30 do
                             17:00 w sali i towarzystwie (wszystkich)
                             dzieci z grupy solenizanta. Nad bezpieczeństwem dzieci oraz ciepłą i wesołą atmosferą czuwa nauczyciel oraz
                             pomoc nauczyciela.</li>
-                        <li><i class="fas fa-arrow-circle-right"></i> Zainteresowanych prosimy zgłaszać się tydzień (minimum) przed
+                        <li><i class="fa fa-arrow-circle-right text-info"></i> Zainteresowanych prosimy zgłaszać się tydzień (minimum) przed
                             planowaną imprezą w sekretariacie.</li>
-                        <li><i class="fas fa-arrow-circle-right"></i> Następnie podczas spotkania z nauczycielem z grupy ustalamy
+                        <li><i class="fa fa-arrow-circle-right text-info"></i> Następnie podczas spotkania z nauczycielem z grupy ustalamy
                             temat przewodni (np. Kraina Lodu, Kubuś
                             puchatek-stary las, Minionki) oraz szczegóły.</li>
-                        <li><i class="fas fa-arrow-circle-right"></i> Nauczyciel przygotowuje na tę okazję: <br>
+                        <li><i class="fa fa-arrow-circle-right text-info"></i> Nauczyciel przygotowuje na tę okazję: <br>
                             – dekorację (stół, tablica ścienna lub inny element w zależności od sali),
                             przeróżne atrakcje w zależności od tematyki (zabawy integracyjne np.: z chustą animacyjną, zabawy taneczne,
                             konkurencje o charakterze sportowym i inne) <br>

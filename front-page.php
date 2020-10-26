@@ -2,7 +2,7 @@
 get_header();
 
 ?>
-<div class="jumbotron jumbotron-fluid" style="background-image: url(<?php echo get_theme_file_uri('./images/pooh.jpg'); ?>)">
+<div class="jumbotron jumbotron-fluid" style="background-image: url(<?php echo get_theme_file_uri('./images/pooh.webp'); ?>)">
     <div class="img-main container text-center">
         <h1 class=" mt-lg-5 mt-xl-0"><?php the_title() ?></h1>
         <p class="lead mt-md-2 mt-lg-5 "><q>Dziecko nie jest pustym naczyniem, nie zawdzięcza wszystkiego co wie nam,
@@ -20,7 +20,7 @@ get_header();
         <div class="flex-md-row flex-row d-flex flex-wrap justify-content-center align-items-around flex-lg-nowrap">
             <div class="card col-12 col-sm-5  col-lg-3  mx-1 mt-1 mt-lg-3" style="max-width: 300px;">
                 <a href="o-przedszkolu/">
-                    <img src="https://i.pinimg.com/564x/5a/14/c0/5a14c0d76bc98fc33a6782860807ac8a.jpg" class="card-img card-img-top mt-2 img-thumbnail" alt="little house">
+                    <img src="<?php echo get_theme_file_uri('./images/home.webp'); ?>" class="card-img card-img-top mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center">O przedszkolu</p>
                     </div>
@@ -29,7 +29,7 @@ get_header();
 
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3  mx-1 mt-1 mt-lg-3" style="max-width: 300px;">
                 <a href="<?php echo site_url('/o-przedszkolu/oferta') ?>">
-                    <img src="<?php echo get_theme_file_uri('./images/offer.png'); ?>" class=" card-img card-img-top mt-2 img-thumbnail" alt="little house">
+                    <img src="<?php echo get_theme_file_uri('./images/offer.webp'); ?>" class=" card-img card-img-top mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center ">Oferta</p>
                     </div>
@@ -37,7 +37,7 @@ get_header();
             </div>
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3  ,mx-1 mt-1  mt-md-2 mt-lg-3 " style="max-width: 300px;">
                 <a href="<?php echo site_url('/o-przedszkolu/grupy') ?>">
-                    <img src="<?php echo get_theme_file_uri('./images/kids-3171905_640.png'); ?>" class="card-img card-img-top mt-2 img-thumbnail" alt="little house">
+                    <img src="<?php echo get_theme_file_uri('./images/kids.webp'); ?>" class="card-img card-img-top mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center">Grupy</p>
                     </div>
@@ -46,7 +46,7 @@ get_header();
 
             <div class="card col-12 col-sm-5 col-lg-3 col-xl-3   mx-1 mt-1  mt-md-2 mt-lg-3" style="max-width: 300px;">
                 <a href="<?php echo site_url('/o-przedszkolu/kadra') ?>">
-                    <img src="<?php echo get_theme_file_uri('./images/team-2306543_640.jpg'); ?>" class="card-img mt-2 img-thumbnail" alt="little house">
+                    <img src="<?php echo get_theme_file_uri('./images/team.webp'); ?>" class="card-img mt-2 img-thumbnail" alt="little house">
                     <div class="card-body ">
                         <p class="card-text text-center ">Kadra</p>
                     </div>
@@ -60,9 +60,9 @@ get_header();
     <section>
         <div id="why-we" class="container-fluid">
             <h2 class="title text-center ">Dlaczego My?</h2>
-            <h3 class="under-title text-center pb-2 pb-md-3">Pedegogika Marii Montessori - kierujemy się między innymi
+            <p class="under-title text-center pb-2 pb-md-3">Pedegogika Marii Montessori - kierujemy się między innymi
                 poniższymi
-                zasadami:</h3>
+                zasadami:</p>
             <div class="row ">
 
                 <div class="description col-12  col-md-6 my-1 my-md-2">
@@ -228,8 +228,8 @@ get_header();
 
                         </div>
                     </div>
-                    <div class="col text-center mt-3"><a href="<?php echo site_url('/blog'); ?>">
-                            <button type="button" class="btn btn-primary btn-lg btn-hover btn-default">Przejdź do Bloga</button>
+                    <div class="col text-center mt-3"><a href="<?php echo site_url('/blog'); ?>" class="btn btn-primary btn-lg btn-hover btn-default">
+                            Przejdź do Bloga
                         </a>
                     </div>
         </div>

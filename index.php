@@ -3,7 +3,7 @@
 
 <main class="wrapper">
     <section>
-        <div class="jumbotron jumbotron-fluid h-50" style="background-image: url(<?php echo get_theme_file_uri('./images/pooh.jpg'); ?>)">
+        <div class="jumbotron jumbotron-fluid h-50" style="background-image: url(<?php echo get_theme_file_uri('./images/pooh.webp'); ?>)">
             <div class="container ">
                 <h1 class="display-4">Witaj na naszym blogu</h1>
                 <p class="lead">Staramy się dzielić wiedzą na temat dzieci ich wychowania i nauki</p>

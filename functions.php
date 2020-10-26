@@ -8,21 +8,30 @@ require get_theme_file_path('/inc/widgets.php');
 function kindergarden_files()
 {
     wp_enqueue_style('bootstrap',  '//cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css');
-    wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.7.2/css/all.css');
-    wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Pacifico&display=swap');
-    wp_enqueue_style('my-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('font-awesome',  get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css');
+    wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Pacifico&display=swap', array(), null);
+    wp_enqueue_style('my-style', get_template_directory_uri() . '/style.min.css');
     // wp_enqueue_script('bootstrap-js', '//code.jquery.com/jquery-3.3.1.slim.min.js', NULL, '1.0', true);
-    wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery-3.5.1.min.js', array('jquery'));
-    wp_enqueue_script('bootstrap-js', '//cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js');
-
-    wp_enqueue_script('custom-script', get_theme_file_uri('/js/scripts.js'),  array('jquery'));
-    // wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'));
+    wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery-3.5.1.min.js', array('jquery'), false, true);
+    wp_enqueue_script('bootstrap-js', '//cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js', array(), false, true);
+    // wp_enqueue_script('custom-script',  get_theme_file_uri('/js/scripts.js'),  array('jquery'));
+    wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), false, true);
 
     wp_localize_script('custom-script', 'kindergadernData', array(
         'root_url' => get_site_url(),
     ));
 }
 add_action('wp_enqueue_scripts', 'kindergarden_files');
+
+add_filter('style_loader_tag', 'my_style_loader_tag_filter', 10, 2);
+
+function my_style_loader_tag_filter($html, $handle)
+{
+    if ($handle === 'google-fonts') {
+        return str_replace("rel='stylesheet'", "rel='preload' as='font' type='font/woff2' crossorigin='anonymous'", $html);
+    }
+    return $html;
+}
 
 /* add features to website*/
 function kindergarden_features()

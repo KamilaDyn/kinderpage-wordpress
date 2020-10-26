@@ -25,9 +25,9 @@
         <div class="social-media col-10 col-sm-4 col-lg-3 mx-auto">
             <h4>My w Mediach</h4>
             <ul>
-                <li> <a href="https://instagram.com" target="_blank">Obserwuj Instagram: <i class="fab fa-instagram pl-2 "></i> </a></li>
-                <li> <a href="https://facebook.com" target="_blank">Facebook: <i class="fab fa-facebook-f pl-2  "></i> </a></li>
-                <li> <a href="#">My w telewizji: <i class="fab fa-file pl-3 "></i> </a></li>
+                <li> <a href="https://instagram.com" target="_blank">Obserwuj Instagram: <i class="fa fa-instagram pl-2 text-info "></i> </a></li>
+                <li> <a href="https://facebook.com" target="_blank">Facebook: <i class="fa fa-facebook pl-2 text-info  "></i> </a></li>
+                <li> <a href="#">My w telewizji: <i class="fa fa-video-camera pl-3 text-info "></i> </a></li>
             </ul>
         </div>
     </div>
@@ -38,7 +38,7 @@
         <div class="search-overlay__top">
             <div class="container">
                 <i class="fa fa-search search-overlay__icon" aria-hidden="true"></i>
-                <input type="text" name="search" class="search-term" placeholder="Szukaj...." id="search-term" autofocus focus autocomplete="off">
+                <input type="text" name="search" class="search-term" placeholder="Szukaj...." id="search-term" autocomplete="off">
                 <i class="fa fa-window-close search-overlay__close" aria-hidden="true"></i>
             </div>
         </div>

@@ -12,6 +12,42 @@ Version: 1.0
 }
 
 /*reset */
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/lato-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"), url("./fonts/lato-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/lato-v17-latin-regular.woff2") format("woff2"), url("./fonts/lato-v17-latin-regular.woff") format("woff"), url("./fonts/lato-v17-latin-regular.ttf") format("truetype"), url("./fonts/lato-v17-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
+  font-display: optional;
+}
+
+/* pacifico-regular - latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/pacifico-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Pacifico Regular"), local("Pacifico-Regular"), url("./fonts/pacifico-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/pacifico-v17-latin-regular.woff2") format("woff2"), url("./fonts/pacifico-v17-latin-regular.woff") format("woff"), url("./fonts/pacifico-v17-latin-regular.ttf") format("truetype"), url("./fonts/pacifico-v17-latin-regular.svg#Pacifico") format("svg");
+  font-display: optional;
+  /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./fonts/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("./fonts/montserrat-v15-latin-regular.woff") format("woff"), url("./fonts/montserrat-v15-latin-regular.ttf") format("truetype"), url("./fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+  font-display: optional;
+  /* Legacy iOS */
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: #333333;
@@ -361,11 +397,6 @@ h4 {
   font-size: 1.33rem;
 }
 
-.list-item {
-  padding-inline-start: 0.5rem;
-  padding-inline-end: 0.5rem;
-}
-
 .carousel-inner {
   background-color: #D1EDE9;
 }
@@ -376,8 +407,6 @@ h4 {
 
 /* aktualności */
 .bookmark {
-  padding-block-end: 2rem;
-  padding-block-start: 2rem;
   margin: 0 auto;
   background-color: #D1EDE9;
 }
@@ -397,15 +426,8 @@ h4 {
   color: #e52121;
 }
 
-/* o przedszkolu*/
-.about-us {
-  margin-block-start: 1.33rem;
-  margin-block-end: 1.33rem;
-}
-
 .about-conatiner {
   border-bottom: 1px solid #e6e6fa;
-  padding-block-end: 1.33rem;
 }
 
 .up-date-link a {
@@ -516,11 +538,6 @@ h4 {
   .under-title {
     font-size: 1.3rem;
   }
-  /*aktualności*/
-  .bookmark {
-    padding-block-end: 0.5rem;
-    padding-block-start: 0.5rem;
-  }
   .bookmark h1 {
     font-size: 2rem;
   }
@@ -600,11 +617,6 @@ h4 {
   .blockquote-footer {
     font-size: 0.6rem;
   }
-  /*aktualności*/
-  .bookmark {
-    padding-block-end: 1rem;
-    padding-block-start: 1rem;
-  }
   .bookmark h1 {
     font-size: 2.5rem;
   }
@@ -632,11 +644,6 @@ h4 {
   }
   .under-title {
     font-size: 2rem;
-  }
-  /* aktualności */
-  .bookmark {
-    padding-block-end: 1.2rem;
-    padding-block-start: 1.2rem;
   }
   .bookmark h1 {
     font-size: 3rem;
@@ -684,10 +691,6 @@ h4 {
   .under-title {
     font-size: 1.3rem;
   }
-  .about-us {
-    padding-block-start: 1.33rem;
-    padding-block-end: 1.33rem;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -699,11 +702,6 @@ h4 {
   }
   .jumbotron p {
     font-size: 1.5rem;
-  }
-  /*aktualności*/
-  .bookmark {
-    padding-block-end: 1.33rem;
-    padding-block-start: 1.33rem;
   }
   .bookmark h1 {
     font-size: 3rem;
@@ -726,9 +724,7 @@ body.login form {
 
 body.login .button-primary {
   background-color: #dc3545;
-  border-color: color(#dc3545 b(10%));
-  text-shadow: 0 -1px 1px color(#dc3545 b(15%)), 1px 0 1px color(#dc3545 b(15%)), 0 1px 1px color(#dc3545 b(15%)), -1px 0 1px color(#dc3545 b(15%));
-  box-shadow: 0 1px 0 color(#dc3545 b(20%));
+  border: none;
 }
 
 body.login h1 a {
