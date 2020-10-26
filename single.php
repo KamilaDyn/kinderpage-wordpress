@@ -22,7 +22,10 @@ get_header();
                         the_post();
                     ?>
                         <div class="offert-container  text-justify ">
-                            <div class="offert-content"><?php the_content(); ?></div>
+                            <div class="offert-content">
+                                <p><?php the_content(); ?></p>
+                                <h5 class="text-center text-black-50">Autor: <?php the_author(); ?></h5>
+                            </div>
                         </div>
 
                     <?php
@@ -31,8 +34,8 @@ get_header();
                 </div>
             </div>
             <div class="sidebar col-12 col-md-4 col-lg-3 ">
-                <div class="col-12 my-3 my-lg-4 text-center">
-                    <p>tutaj będą aktualnosci oraz lista grup</p>
+                <div class="col-12 my-3 my-lg-4  text-center mx-auto">
+                    <?php dynamic_sidebar('default-sidebar'); ?>
                 </div>
             </div>
         </div>

@@ -32,7 +32,7 @@ get_header();
             </div>
             <div class="sidebar col-12 col-md-4 col-lg-3 ">
                 <div class="col-12 my-3 my-lg-4 text-center">
-                    <p>tutaj będą aktualnosci oraz lista grup</p>
+                    <?php dynamic_sidebar('offers-sidebar'); ?>
                 </div>
             </div>
         </div>

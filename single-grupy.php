@@ -66,7 +66,7 @@ get_header();
 
             <div class="up-date-kid col-12 col-md-4 col-lg-3 ">
                 <div class="col-12 my-3 my-lg-4 text-center">
-                    <p>tutaj będą aktualnosci oraz lista grup</p>
+                    <?php dynamic_sidebar('default-sidebar'); ?>
                 </div>
             </div>
         </div>
