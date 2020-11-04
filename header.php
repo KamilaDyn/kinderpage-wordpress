@@ -9,6 +9,11 @@
 
 <body <?php body_class() ?>>
     <header>
+        <?php if (!is_user_logged_in()) { ?>
+            <div>
+                <span class="text-danger text-right pl-3">to jest wersja testowa strony: zaloguj się jako subskrybent: login: subskrybent ->hasło: 123subs</span>
+            </div>
+        <?php } ?>
         <div class="d-sm-flex  justify-content-between px-3 bg-info ">
             <h5><a class="nav-link text-white " href="tel:+48123123123">+48 123-123-123</a></h5>
             <div class="login-buttons d-flex justify-content-center align-items-center mb-3 mb-sm-0 ">
