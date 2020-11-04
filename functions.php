@@ -2,6 +2,7 @@
 
 
 require get_theme_file_path('/inc/search-route.php');
+require get_theme_file_path('/inc/like-route.php');
 
 require get_theme_file_path('/inc/widgets.php');
 /* add style and scripts to website */
@@ -15,10 +16,11 @@ function kindergarden_files()
     wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery-3.5.1.min.js', array('jquery'), false, true);
     wp_enqueue_script('bootstrap-js', '//cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js', array(), false, true);
     // wp_enqueue_script('custom-script',  get_theme_file_uri('/js/scripts.js'),  array('jquery'));
-    wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), false, true);
+    wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/bundle/bundle.js', array('jquery'), false, true);
 
-    wp_localize_script('custom-script', 'kindergadernData', array(
+    wp_localize_script('custom-script', 'kindergardenData', array(
         'root_url' => get_site_url(),
+        'nonce' => wp_create_nonce('wp_rest')
     ));
 }
 add_action('wp_enqueue_scripts', 'kindergarden_files');
