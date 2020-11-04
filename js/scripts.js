@@ -11,7 +11,7 @@ typingAction();
 
 
 function getResults(){
-      $.getJSON(`${kindergadernData.root_url}/wp-json/kindergarden/v1/search?term=${searchField.val()}`, results=>{
+      $.getJSON(`${kindergarden.root_url}/wp-json/kindergarden/v1/search?term=${searchField.val()}`, results=>{
         divResults.append(`
         <div id="search-output">
         <h3 class="py-3 text-center"> Wyniki wyszukiwania</wyh3>
