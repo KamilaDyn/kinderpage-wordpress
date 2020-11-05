@@ -7,4 +7,10 @@
 
 ## Tech Stack
  1. Bootsrap4
-2. Js
+2. Js / Query
+3. PHP
+
+## Demo View
+
+<img src="./demo/demo.gif" width="500" height="400" />
+<img src="./demo/demo2.gif" width="320" height="600" />
