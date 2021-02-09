@@ -78,6 +78,8 @@ get_header();
             }
             ?>
 
+            <div><?php echo get_the_excerpt();?></div>
+
           </article>
 
         </div>

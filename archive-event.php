@@ -23,6 +23,7 @@ get_header();
                                 ?> </h3>
 
                         <p> <?php echo wp_trim_words(get_the_content(), 100); ?></p>
+
                         <p><a class="text-primary" href="<?php the_permalink() ?>">Czytaj więcej</a></p>
                     </article>
                 </a>

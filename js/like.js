@@ -46,11 +46,11 @@ jQuery(document).ready(function ($) {
                 xhr.setRequestHeader("X-WP-Nonce", kindergardenData.nonce);
             },
             url: `${kindergardenData.root_url}/wp-json/kindergarden/v1/manageLike`,
-
+            type: 'DELETE',
             data: {
                 'like': currentLikeBox.attr('data-like')
             },
-            type: 'DELETE',
+           
             success: (response) => {
                 currentLikeBox.attr('data-exists', 'no');
                 let likeCount = parseInt(currentLikeBox.find(".like-count").html(), 10);

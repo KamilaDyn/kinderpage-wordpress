@@ -22,7 +22,7 @@
                     <?php while (have_posts()) {
                         the_post(); ?>
 
-                        <li class="offers-list"><a href="<?php the_permalink(); ?>"><i class="fas fa-arrow-circle-right"></i> <?php the_title(); ?></li></a>
+                        <li class="offers-list"><a href="<?php the_permalink(); ?>"><i class="fa fa-arrow-circle-right"></i> <?php the_title(); ?></li></a>
 
                     <?php  } ?>
                 </ul>

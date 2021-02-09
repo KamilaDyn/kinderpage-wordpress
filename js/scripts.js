@@ -1,18 +1,17 @@
+jQuery(document).ready(function ($) {
 
-jQuery(document).ready(function($){
-
-var searchField = $('#search-term');
-var divResults = $('#search-overlay__results');
-var typingTimer;
-var previousValue;
-openOverlay();
-closeOverlay();
-typingAction();
+  var searchField = $('#search-term');
+  var divResults = $('#search-overlay__results');
+  var typingTimer;
+  var previousValue;
+  openOverlay();
+  closeOverlay();
+  typingAction();
 
 
-function getResults(){
-      $.getJSON(`${kindergardenData.root_url}/wp-json/kindergarden/v1/search?term=${searchField.val()}`, results=>{
-        divResults.append(`
+  function getResults() {
+    $.getJSON(`${kindergardenData.root_url}/wp-json/kindergarden/v1/search?term=${searchField.val()}`, results => {
+      divResults.append(`
         <div id="search-output">
         <h3 class="py-3 text-center"> Wyniki wyszukiwania</wyh3>
         <div class="col-12 d-flex flex-row m-auto pt-3 justify-content-center  flex-wrap">
@@ -56,69 +55,68 @@ function getResults(){
         </div>
         </div>
         `)
-      })
-        
-        $('#spinner').remove();
-                   }        
+    })
 
-
-// open by s-key and close by esc-key
-    $(document).on('keyup', function(e){
-                if(e.keyCode == 83 && !($('.search-overlay').hasClass('search-overlay--active'))){
-                                $('.search-overlay').addClass('search-overlay--active');
-                                $('body').addClass('body-no-scroll');
-                                setTimeout(()=>
-                                searchField.focus()
-                               ,301)
-                               e.preventDefault();
-                }
-
-                if(e.keyCode == 27 && $('.search-overlay').hasClass('search-overlay--active')){
-                        $('.search-overlay').removeClass('search-overlay--active');  
-                }
-        })
-    // typing logic
-  function typingAction(){
-        searchField.on('keyup', function(){
-                if(searchField.val() != previousValue){
-                        clearTimeout(typingTimer);
-                        $('#search-output').remove();
-                        if(searchField.val()){
-                                if(!($('#spinner').length)){
-                                        divResults.append("<div id='spinner' class=' spinner-border text-danger' role='status'><span class='sr-only'>Loading...</span></div>");
-                                 }
-                                typingTimer = setTimeout(function(){getResults()}, 1000);    
-                        }else{
-                                 $('#search-output').remove();
-                                 $('#spinner').remove()
-
-                        }
-                }
-                previousValue = searchField.val();
-            
-           })
+    $('#spinner').remove();
   }
 
-           function openOverlay(){
-                $('#search').on('click', (e)=>{
-                        $('.search-overlay').addClass('search-overlay--active');
-                        $('body').addClass('body-no-scroll');
-                        
-                        setTimeout(()=>
-                             searchField.focus()
-                            ,301)
-                            e.preventDefault();
-                }
-                     
-                    )
-        }
-        function closeOverlay(){
-                $('.search-overlay__close').on('click', function(){
-                        $('.search-overlay').removeClass('search-overlay--active');
-                        $('body').removeClass('body-no-scroll');
-                    })
-        }
-            
-})
-    
 
+  // open by s-key and close by esc-key
+  $(document).on('keyup', function (e) {
+    if (e.keyCode == 83 && !($('.search-overlay').hasClass('search-overlay--active'))) {
+      $('.search-overlay').addClass('search-overlay--active');
+      $('body').addClass('body-no-scroll');
+      setTimeout(() =>
+        searchField.focus(), 301)
+      e.preventDefault();
+    }
+
+    if (e.keyCode == 27 && $('.search-overlay').hasClass('search-overlay--active')) {
+      $('.search-overlay').removeClass('search-overlay--active');
+    }
+  })
+  // typing logic
+  function typingAction() {
+    searchField.on('keyup', function () {
+      if (searchField.val() != previousValue) {
+        clearTimeout(typingTimer);
+        $('#search-output').remove();
+        if (searchField.val()) {
+          if (!($('#spinner').length)) {
+            divResults.append("<div id='spinner' class=' spinner-border text-danger' role='status'><span class='sr-only'>Loading...</span></div>");
+          }
+          typingTimer = setTimeout(function () {
+            getResults()
+          }, 1000);
+        } else {
+          $('#search-output').remove();
+          $('#spinner').remove()
+
+        }
+      }
+      previousValue = searchField.val();
+
+    })
+  }
+
+  function openOverlay() {
+    $('#search').on('click', (e) => {
+        $('.search-overlay').addClass('search-overlay--active');
+        $('body').addClass('body-no-scroll');
+
+        setTimeout(() =>
+          searchField.focus(), 301)
+        e.preventDefault();
+      }
+
+    )
+  }
+
+  function closeOverlay() {
+    $('.search-overlay__close').on('click', function () {
+      $('.search-overlay').removeClass('search-overlay--active');
+      $('body').removeClass('body-no-scroll');
+    })
+  }
+
+})
